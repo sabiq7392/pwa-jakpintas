@@ -12,6 +12,17 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.css$/i,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+          }
+        ]
+      },
+      {
         test: /\.scss$/,
         use: [
           'style-loader',
@@ -43,13 +54,6 @@ module.exports = {
       template: path.resolve(__dirname, 'src/templates/index.html'),
       filename: 'index.html',
     }),
-    // new CopyWebpackPlugin({
-    //   patterns: [
-    //     {
-    //       from: path.resolve(__dirname, 'src/public/'),
-    //       to: path.resolve(__dirname, 'dist/'),
-    //     },
-    //   ],
-    // }),
+    
   ],
 };

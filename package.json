@@ -6,7 +6,7 @@
   "scripts": {
     "start-dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "test": "karma start"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "sabiq muhammad sabiqmuhammad@gmail.com",
@@ -20,6 +20,7 @@
     "css-loader": "^3.6.0",
     "eslint": "^7.4.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^4.3.0",
     "sass": "^1.45.1",
     "sass-loader": "^7.2.0",
@@ -34,6 +35,7 @@
   },
   "dependencies": {
     "bootstrap-icons": "^1.7.2",
+    "mapbox-gl": "^2.6.1",
     "regenerator-runtime": "^0.13.5"
   }
 }
