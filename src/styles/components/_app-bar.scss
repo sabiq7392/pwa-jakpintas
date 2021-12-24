@@ -1,0 +1,39 @@
+#appBar {
+  display: grid;
+  nav {
+    display: grid;
+    grid-template-columns: 44px 1fr 44px;
+    
+    background-color: white;
+    border-radius: $size-x-sm;
+    box-shadow: $shadow-default;
+    button[aria-label="open menu"]:hover,
+    input[type="search"]:hover,
+    a[aria-label="profile"]:hover {
+      filter: brightness(90%);
+    }
+
+    button[aria-label="open menu"] {
+      background-color: white;
+
+      border-top-left-radius: inherit;
+      border-bottom-left-radius: inherit;
+      i.bi-list {
+        font-size: 24px;
+        color: black;
+      }
+    }
+
+    input[type="search"] {
+      padding: $size-x-sm $size-sm;
+    }
+
+    a[aria-label="profile"] {
+      @include place-center(grid);
+      color: $color-blue-light;
+      i.bi-person-circle { 
+        font-size: 24px;
+      }
+    }
+  }
+}

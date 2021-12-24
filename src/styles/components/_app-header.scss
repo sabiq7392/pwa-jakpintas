@@ -1,0 +1,12 @@
+#appHeader {
+  @include container();
+  
+  position: fixed;
+  z-index: 100;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 100vw;
+  padding: $p-sm;
+}

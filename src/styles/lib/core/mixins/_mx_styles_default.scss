@@ -1,0 +1,38 @@
+@mixin styles-default-add-custom-tag() {
+  display: block;
+}
+
+@mixin styles-default-reset-tag-all() {
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  button {
+    border: none;
+  }
+}
+
+@mixin clickable-element-rule($min-width: 44px, $min-height: 44px) {
+  button, 
+  input, 
+  a {
+    min-width: $min-width;
+    min-height: $min-height;
+  }
+}

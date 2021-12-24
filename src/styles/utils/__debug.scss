@@ -1,0 +1,8 @@
+@mixin debug($color: red, $size: 1px, $style: solid, $prop: border) {
+  @if $prop == border {
+    border: $size $style $color;
+  }
+  @else if $prop == background {
+    background-color: $color;
+  }
+}

@@ -1,0 +1,47 @@
+#bottomNavbar {
+  display: grid;
+  nav {
+    display: grid;
+    grid-template-rows: 10px 1fr;
+    gap: $size-lg;
+
+    background-color: white;
+    padding: $size-sm;
+    border-top-left-radius: $size-md;
+    border-top-right-radius: $size-md;
+    div[aria-label="open swipe up menu"] {
+      @include place-center(grid);
+      background-color: white;
+      .icon-line {
+        background-color: rgba(204, 204, 204, 0.933);
+        width: 100px;
+        height: 3px;
+        border-radius: 2px;
+      }
+    }
+
+    .container-action-link {
+      @include place-center(grid);
+      grid-template-columns: repeat(3, 1fr);
+      a.action-link {
+        @include place-center(grid);
+        gap: $size-x-sm;
+        color: $color-blue-light;
+        width: 100%;
+        span.icon {
+          @include place-center(grid);  
+          height: 35px;
+          width: 35px;
+          border: 1px solid $color-blue-light;
+          border-radius: 50%;
+        }
+
+        span.text {
+          @include media('tablet') {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

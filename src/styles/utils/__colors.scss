@@ -1,0 +1,27 @@
+$color-white: #FFF;
+$color-light: #F4F4F4;
+$color-black: #414042;
+$color-purple: #9B64B5;
+$color-cyan: #39C5D8;
+$color-orange-dark: #FF6600;
+$color-orange-light: #F7941D;
+$color-blue-dark: #1F3161;
+$color-blue-light: #3498db;
+$color-turqoise-light: #117A96;
+$color-turqoise-medium: #0B6280;
+$color-turqoise-dark: #135180;
+
+@import './_backgrounds';
+
+.my-text-white { color: $color-white!important; }
+.my-text-light { color: $color-light!important; }
+.my-text-black { color: $color-black!important; }
+.my-text-purple { color: $color-purple!important; }
+.my-text-cyan { color: $color-cyan!important; }
+.my-text-orange-dark { color: $color-orange-dark!important; }
+.my-text-orange-light { color: $color-orange-light!important; }
+.my-text-blue-dark { color: $color-blue-dark!important; }
+.my-text-blue-light { color: $color-blue-light!important; }
+.my-text-turqoise-light { color: $color-turqoise-light!important; }
+.my-text-turqoise-medium { color: $color-turqoise-medium!important; }
+.my-text-turqoise-dark { color: $color-turqoise-dark!important; }
