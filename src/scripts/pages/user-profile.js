@@ -1,4 +1,4 @@
-import authButton from '../components/main/_authButton';
+import authButton from '../components/main/_auth-button';
 
 class UserProfile {
   constructor() {

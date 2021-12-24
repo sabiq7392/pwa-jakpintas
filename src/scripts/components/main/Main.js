@@ -1,1 +1,1 @@
-import './_map-box';
+import ('./_map-box');

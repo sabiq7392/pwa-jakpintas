@@ -497,14 +497,20 @@ input {
   padding: 5px 10px;
 }
 
-#appBar nav a[aria-label="user profile"] {
+#appBar nav a[href="#user-profile"] {
   display: -ms-grid;
   display: grid;
   place-items: center;
   color: #3498db;
 }
 
-#appBar nav a[aria-label="user profile"] i.bi-person-circle {
+#appBar nav a[href="#user-profile"] img {
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+}
+
+#appBar nav a[href="#user-profile"] i.bi-person-circle {
   font-size: 24px;
 }
 
@@ -624,27 +630,48 @@ input {
 }
 
 #userProfilePage {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+#userProfilePage a[aria-label="return main page"] {
+  color: black;
+  font-size: 18px;
+  padding: 11px 13px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 #userProfilePage .container-user {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  width: 90%;
+  gap: 10px;
+  margin: auto;
+  margin-top: 150px;
+  width: 100%;
+  padding: 20px;
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  padding: 20px;
 }
 
 #userProfilePage .container-user img#userImage {
   width: 100px;
+  border-radius: 50%;
 }
 
 #userProfilePage .container-user button.btn-sign-out {
   width: 120px;
-  height: 36px;
+  font-weight: bold;
+  color: #757575;
+  background-color: white;
+  border: 1px solid #b3b3b3;
+  cursor: pointer;
+}
+
+#userProfilePage .container-user button.btn-sign-out:hover {
+  -webkit-box-shadow: 0 0px 4px 0 rgba(52, 152, 219, 0.8);
+          box-shadow: 0 0px 4px 0 rgba(52, 152, 219, 0.8);
 }
 /*# sourceMappingURL=index.css.map */
