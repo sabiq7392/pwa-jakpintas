@@ -1,4 +1,5 @@
 import userProfile from '../pages/user-profile';
+import mainPage from '../pages/main-page';
 
 class Routes {
 
@@ -7,7 +8,12 @@ class Routes {
   }
 
   renderPage() {
+    if (this._isUrl('')) {
+      mainPage.render();
+    }
+
     if (this._isUrl('#user-profile')) {
+      location.hash = '/user-profile';
       userProfile.render();
     }
   }

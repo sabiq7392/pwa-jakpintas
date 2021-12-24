@@ -17,8 +17,12 @@ class AppBar extends HTMLElement {
           type="search"
           placeholder="cari lokasi..."
         />
-        <a href="#user-profile" aria-label="user profile">
-          <i class="bi bi-person-circle"></i>
+        <a href="#user-profile">
+          <img 
+            id="userImageInAppBar"
+            src="https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg" 
+            alt="user image"
+          />
         </a>
       </nav>
     `;
@@ -26,3 +30,7 @@ class AppBar extends HTMLElement {
 }
 
 customElements.define('app-bar', AppBar);
+
+{/* <a href="#user-profile" aria-label="user profile">
+<i class="bi bi-person-circle"></i>
+</a> */}

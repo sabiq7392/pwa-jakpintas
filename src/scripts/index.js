@@ -10,9 +10,10 @@ const main = () => {
   routes.renderPage();
 };
 
+main();
+
 window.onhashchange = () => {
   routes.renderPage();
 };
 
-main();
 

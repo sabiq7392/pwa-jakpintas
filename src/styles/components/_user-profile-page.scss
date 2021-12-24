@@ -1,0 +1,46 @@
+#userProfilePage {
+  height: 100vh;
+  padding: $size-lg;
+  a[aria-label="return main page"] {
+    color: black;
+    font-size: 18px;
+    padding: 11px 13px;
+    background-color: white;
+    box-shadow: $shadow-default;
+  }
+
+  .container-user {
+    @include place-center(grid);
+    gap: $size-sm;
+    
+    margin: auto;
+    margin-top: 150px;
+
+    width: 100%;
+    padding: $size-lg;
+
+    box-shadow: $shadow-default;
+    img#userImage {
+      width: 100px;
+      border-radius: 50%;
+    }
+
+    button.btn-sign-out {
+      width: 120px;
+
+      font-weight: bold;
+      color: #757575;
+      background-color: white;
+      border: 1px solid #b3b3b3;
+
+      cursor: pointer;
+      &.active {
+        box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+      }
+
+      &:hover {
+        box-shadow: 0 0px 4px 0 rgb($color-blue-light, 0.8);
+      }
+    }
+  }
+}

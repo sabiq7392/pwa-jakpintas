@@ -1,6 +1,4 @@
-import authButton from '../components/main/_authButton';
-
-class UserProfile {
+class MainPage {
   constructor() {
     this.userProfilePage = document.querySelector('#userProfilePage');
     this.mainPage = document.querySelector('#mainPage');
@@ -13,30 +11,29 @@ class UserProfile {
       userProfilePage, mainPage, appHeader, floatBottom 
     } = this;
 
-    if (userProfilePage.classList.contains('d-none')) {
-      this._show({ addPage: userProfilePage });
-      this._hide({
-        removePage: mainPage,
-        removeComponents: [
+    if (mainPage.classList.contains('d-none')) {
+      this._show({
+        addPage: mainPage,
+        addComponents: [
           appHeader, floatBottom,
         ],
       });
 
-      authButton.render();
-    } 
+      this._hide({ removePage: userProfilePage });
+    }
   }
 
-  _show({ addPage }) {
+  _show({ addPage, addComponents }) {
     addPage.classList.remove('d-none');
+    addComponents
+      .forEach((addComponent) => addComponent.classList.remove('d-none'));
   }
 
-  _hide({ removePage, removeComponents }) {
+  _hide({ removePage }) {
     removePage.classList.add('d-none');
-    removeComponents
-      .forEach((removeComponent) => removeComponent.classList.add('d-none'));
   }
 }
 
-const userProfile = new UserProfile();
+const mainPage = new MainPage();
 
-export default userProfile;
+export default mainPage
