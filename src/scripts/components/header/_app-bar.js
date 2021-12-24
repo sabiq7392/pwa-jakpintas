@@ -17,7 +17,7 @@ class AppBar extends HTMLElement {
           type="search"
           placeholder="cari lokasi..."
         />
-        <a href="" aria-label="profile">
+        <a href="#user-profile" aria-label="user profile">
           <i class="bi bi-person-circle"></i>
         </a>
       </nav>

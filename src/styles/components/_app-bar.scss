@@ -28,7 +28,7 @@
       padding: $size-x-sm $size-sm;
     }
 
-    a[aria-label="profile"] {
+    a[aria-label="user profile"] {
       @include place-center(grid);
       color: $color-blue-light;
       i.bi-person-circle { 

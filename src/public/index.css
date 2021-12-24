@@ -497,14 +497,14 @@ input {
   padding: 5px 10px;
 }
 
-#appBar nav a[aria-label="profile"] {
+#appBar nav a[aria-label="user profile"] {
   display: -ms-grid;
   display: grid;
   place-items: center;
   color: #3498db;
 }
 
-#appBar nav a[aria-label="profile"] i.bi-person-circle {
+#appBar nav a[aria-label="user profile"] i.bi-person-circle {
   font-size: 24px;
 }
 
