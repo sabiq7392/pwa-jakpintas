@@ -13,6 +13,7 @@ module.exports = merge(common, {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],
+              ignore: [ './node_modules/mapbox-gl/dist/mapbox-gl.js'],
             },
           },
         ],
