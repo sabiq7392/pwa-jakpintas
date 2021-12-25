@@ -1,0 +1,10 @@
+table {
+  width: 100%;
+  padding: $size-x-sm $size-md;
+  th, td {
+    padding: $size-x-sm;
+  }
+  // td:nth-child(1) {
+  //   text-align: center;
+  // }
+}

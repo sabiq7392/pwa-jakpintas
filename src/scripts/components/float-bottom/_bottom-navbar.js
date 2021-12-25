@@ -14,11 +14,11 @@ class BottomNavbar extends HTMLElement {
           <div class="icon-line"></div>
         </div>
         <div class="container-action-link">
-          <a href="#" class="action-link">
+          <a href="#profile" class="action-link">
             <span class="icon">
               <i class="bi bi-geo-alt-fill"></i>
             </span>
-            <span class="text">Profil</span>
+            <span class="text">Profile</span>
           </a>
           <a href="#ekonomi" class="action-link">
             <span class="icon">

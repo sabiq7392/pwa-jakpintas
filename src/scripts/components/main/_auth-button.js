@@ -1,19 +1,19 @@
 class AuthButton {
   constructor() {
-    this.signIn = document.querySelector('.g-signin2');
     this.username = document.querySelector('#userName');
     this.signOut = document.querySelector('.btn-sign-out');
+    this.signIn = document.querySelector('.g-signin2');
   }
 
   render() {
+    const { username, signOut, signIn } = this;
 
-    if (this.username.textContent !== '') {
-      this.signOut.classList.remove('d-none');
-      this.signIn.classList.add('d-none');
+    if (username.textContent !== '') {
+      signOut.classList.remove('d-none');
+      signIn.classList.add('d-none');
     } else {
-      console.log('hai')
-      this.signOut.classList.add('d-none');
-      this.signIn.classList.remove('d-none');
+      signOut.classList.add('d-none');
+      signIn.classList.remove('d-none');
     }
   }
 }

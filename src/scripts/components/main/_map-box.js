@@ -1,4 +1,5 @@
 import mapboxgl from 'mapbox-gl';
+// const MapboxDirections = require('@mapbox/mapbox-gl-directions');
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 class MapBox extends HTMLElement {
@@ -30,6 +31,14 @@ class MapBox extends HTMLElement {
       center: [-74.5, 40], // starting position [lng, lat]
       zoom: 9, // starting zoom
     });
+
+    // const directions = new MapboxDirections({
+    //   accessToken: mapboxgl.accessToken,
+    //   unit: 'metric',
+    //   profile: 'mapbox/cycling',
+    // });
+
+    // map.addControl(directions, 'bottom-left');
 
     this._partNav({ map, position: 'bottom-right' });
     this._removeDefaultPart('.mapboxgl-ctrl-attrib');

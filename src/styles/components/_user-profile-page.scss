@@ -1,14 +1,5 @@
 #userProfilePage {
   height: 100vh;
-  padding: $size-lg;
-  a[aria-label="return main page"] {
-    color: black;
-    font-size: 18px;
-    padding: 11px 13px;
-    background-color: white;
-    box-shadow: $shadow-default;
-  }
-
   .container-user {
     @include place-center(grid);
     gap: $size-sm;
@@ -16,7 +7,7 @@
     margin: auto;
     margin-top: 150px;
 
-    width: 100%;
+    width: 90%;
     padding: $size-lg;
 
     box-shadow: $shadow-default;

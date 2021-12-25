@@ -30,53 +30,31 @@
 	<title>JakPintas</title>
 </head>
 <body>
-	<header id="appHeader">
+	<header id="appHeader" class="component">
 		<app-bar id="appBar"></app-bar>
 	</header>
 
 	<main id="main">
-		<div id="mainPage">
+		<div id="mainPage" class="page">
 			<map-box></map-box>
 		</div>
 		
-		<div id="userProfilePage" class="d-none">
-			<a href="#" aria-label="return main page">
-				<i class="bi bi-arrow-left"></i>
-			</a>
-			<div class="container-user">
-				<img 
-					id="userImage" 
-					src="https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg" 
-					alt="user image"
-				/>
+		<div id="userProfilePage" class="page d-none">
+			<user-profile></user-profile>
+		</div>
 
-				<p id="userName"></p>
-				<p id="userEmail"></p>
+		<div id="profilePage" class="page d-none">
+			<profile-element></profile-element>
+		</div>
 
-				<div class="d-flex gap-md">
-					<div 
-						class="g-signin2" 
-						data-onsuccess="onSignIn"
-						style="height: 44px;"
-					>
-					</div>
-
-					<button 
-						href="#" 
-						onclick="signOut();"
-						class="btn-sign-out"
-					>
-						Sign out
-					</button>
-				</div>
-			</div>
+		<div id="ekonomiPage" class="page d-none">
+			<h1>Ekonomi</h1>
 		</div>
 	</main>
 
-	<div id="floatBottom">
+	<div id="floatBottom" class="component">
 		<bottom-navbar id="bottomNavbar"></bottom-navbar>
 	</div>
-
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
 	<script>
 		function onSignIn(googleUser) {

@@ -13,9 +13,14 @@ input {
   border: none;
 }
 
+
 @import './components/app-header';
 @import './components/app-bar';
 @import './components/map-box';
+@import './components/btn-return-main';
+@import './components/title-bar';
 @import './components/float-bottom';
 @import './components/bottom-navbar';
 @import './components/user-profile-page';
+@import './components/profile-page';
+@import './components/table';

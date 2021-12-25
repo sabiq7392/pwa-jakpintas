@@ -10,6 +10,7 @@ import swRegister from './utils/sw-register';
 window.addEventListener('load', () => {
   routes.renderPage();
   swRegister();
+  
 });
 
 window.onhashchange = () => {

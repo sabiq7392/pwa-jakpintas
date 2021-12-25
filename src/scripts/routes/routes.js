@@ -1,5 +1,7 @@
-import userProfile from '../pages/user-profile';
-import mainPage from '../pages/main-page';
+import userProfileController from '../controllers/user-profile-controller';
+import mainController from '../controllers/main-controller';
+import profileController from '../controllers/profile-controller';
+import ekonomiController from '../controllers/ekonomi-controller';
 
 class Routes {
 
@@ -9,12 +11,22 @@ class Routes {
 
   renderPage() {
     if (this._isUrl('')) {
-      mainPage.render();
+      mainController.render();
     }
 
     if (this._isUrl('#user-profile')) {
       location.hash = '/user-profile';
-      userProfile.render();
+      userProfileController.render();
+    }
+
+    if (this._isUrl('#profile')) {
+      location.hash = '/profile';
+      profileController.render();
+    }
+
+    if (this._isUrl('#ekonomi')) {
+      location.hash = '/ekonomi';
+      ekonomiController.render();
     }
   }
 }
